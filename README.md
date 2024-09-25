@@ -1,18 +1,18 @@
-#**Loan Prediction Based on Cusmtomers Behaviour**
+**Loan Prediction Based on Cusmtomers Behaviour**
 Develop a machine learning model to predict loan approval based on customer behavior data. The project involves data preprocessing, exploratory data analysis, feature selection, model development using classification algorithms, evaluation of model performance, hyperparameter optimization, and providing actionable insights.
 
-#**Problem Statement:**
+**Problem Statement:**
 Understanding the behavior and preferences of good borrowers (those with a low probability of default) and bad borrowers (those with a high probability of default) involves analyzing their demographic, financial, and behavioral data to identify patterns and characteristics that distinguish them. Reducing credit risk due to high numbers of defaulters is crucial to maintaining financial stability and profitability. Additionally, there is a need to accelerate the loan evaluation and approval process to enhance operational efficiency and customer satisfaction.
 
-#**Solution Approch:**
+**Solution Approch:**
 To reduce credit risk, implement stricter credit assessment criteria, use predictive analytics to identify high-risk borrowers, and offer tailored financial products that encourage timely repayments. Accelerate the loan evaluation and approval process by leveraging automated decision-making systems, integrating advanced data analytics, and streamlining internal workflows. These measures will help to ensure more accurate assessments, quicker approvals, and better overall management of the loan portfolio.
 
-#**Observation:**
+**Observation:**
 **Exploratory Data Analysis and Data Description:**
 
 The dataset used for predicting loan default based on customer behavior includes various features that describe demographic, financial, and behavioral aspects of customers. Each feature has an appropriate data type, and for machine learning purposes, categorical features will be converted into numerical features. There are no missing values, so there is no need for dropping or imputing values. The dataset contains no duplicate entries and includes 252,000 rows of data.
 
-#**Feature Descriptions:**
+**Feature Descriptions:**
 
 - Income: The average income of customers is Rs5,000,000, with a range from Rs10,000 to Rs9,900,000. The median income is close to the average, indicating no significant outliers.
 - Age: The average age of customers is around 49 years, with an age range between 21 and 79 years.
@@ -39,12 +39,12 @@ The dataset used for predicting loan default based on customer behavior includes
 - Profession Distribution: Customers come from various professions, with doctors and statisticians being the most common. For analysis, these professions will be grouped into broader categories.
 - State Distribution: Customers are primarily from Uttar Pradesh and Maharashtra. There is a typo in Uttar_Pradesh[5], which should be corrected to Uttar_Pradesh. For modeling purposes, these states will be grouped into smaller regions.
 
-#**Statistical Analysis Results:**
+**Statistical Analysis Results:**
 
 Based on chi-squared tests and t-tests, several features have statistically significant relationships with the target feature, risk_flag. These features include experience, state, house_ownership, car_ownership, age, marital status (married/single), profession, current_job_yrs, current_house_yrs, and income_category.
 
-#**Findings:**
+**Findings:**
 We developed a machine learning model using a base Decision Tree (default parameters) and evaluated its performance, achieving an accuracy of 87%. After hyperparameter tuning, the model showed a repayment rate of 96.4%. The feature importance analysis revealed that age, profession, and experience are the top three factors influencing the target variable.
 
-#**Insights:**
+**Insights:**
 Analysis reveals that certain professions such as Police Officer, Chartered Accountant, Army Officer, Surveyor, and Software Developer have the highest default rates. Younger customers are more likely to default, while longer work experience correlates with reduced default risk. Statistical tests confirm significant relationships between various features and default risk, indicated by very small p-values. Implementing the predictive model has improved the repayment rate from 87% to 96%, surpassing the 5% target increase. The model also enhances credit assessment efficiency by automating approvals for most categories, reducing approval time from 7 days to less than 24 hours. Consequently, faster and more accurate loan approvals are projected to increase customer satisfaction by 10% within six months.
